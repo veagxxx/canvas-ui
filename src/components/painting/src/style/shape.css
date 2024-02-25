@@ -1,0 +1,71 @@
+.shape-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  width: 160px;
+}
+.shape-item {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 0px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.shape-rect {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--dark);
+}
+.is-dark .shape-rect {
+  border: 1px solid var(--light);
+}
+.shape-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--dark);
+}
+.is-dark .shape-circle {
+  border: 1px solid var(--light);
+}
+.shape-ellipse {
+  width: 20px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--dark);
+}
+.is-dark .shape-ellipse {
+  border: 1px solid var(--light);
+}
+svg {
+  width: 16px;
+  height: 16px;
+}
+
+.is-dark svg {
+  stroke: var(--light);
+  fill: var(--dark);
+}
+.is-light svg {
+  fill: var(--light);
+  stroke: var(--dark);
+}
+
+.shape-item:hover {
+  background-color: var(--shape-selected);
+}
+
+.spikes-canvas, .polygon-canvas {
+  z-index: -1;
+  background-color: var(--light);
+}
+
+.is-dark .spikes-canvas, .is-dark .polygon-canvas {
+  background-color: var(--dark);
+}

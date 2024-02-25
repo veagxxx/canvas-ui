@@ -1,0 +1,29 @@
+.painting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+.painting-board {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 34px);
+  border: 1px solid #aaa;
+  box-shadow: inset 0 0 1px 1px #ddd;
+  background-color: #fff;
+}
+.painting-board > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shape-canvas {
+  z-index: 1;
+}
+.line-canvas {
+  z-index: 0;
+}
+
+

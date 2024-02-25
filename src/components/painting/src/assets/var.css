@@ -1,0 +1,12 @@
+:root {
+  --painting-toolbar-height: 34px;
+  --painting-theme: #626AEF;
+  --shape-selected: #626AEF66;
+}
+
+.tooltip-popper {
+  --dark: #000000;
+  --drak-border: #000000;
+  --light: #ffffff;
+  --light-border: #e4e7ed;
+}

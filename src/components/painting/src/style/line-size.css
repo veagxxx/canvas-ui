@@ -1,0 +1,24 @@
+.line-item {
+  display: flex;
+  align-items: center;
+  margin: 4px 0px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+.line-item div {
+  background-color: var(--dark);
+}
+.is-dark .line-item {
+  color: #fff;
+} 
+.is-dark .line-item div {
+  background-color: var(--light);
+}
+.line-item:hover {
+  background-color: var(--shape-selected);
+}
+.line-item.line-selected {
+  background-color: var(--shape-selected);
+}

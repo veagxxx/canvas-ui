@@ -1,0 +1,73 @@
+.painting-toolbar {
+  width: calc(100% - 16px);
+  height: var(--painting-toolbar-height);
+  border: 1px solid #aaa;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: #888;
+  background-color: #fff;
+  padding: 0 8px;
+  justify-content: space-between;
+}
+.toolbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.toolbar-right {
+  justify-content: flex-end;
+}
+.toolbar-item {
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  padding: 0 4px;
+  transition: all .3s;
+  border-radius: 4px;
+  cursor: pointer;
+  list-style: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  color: #888;
+}
+
+.selected {
+  background-color: var(--shape-selected);
+}
+
+.toolbar-item:not(.is-disabled):hover {
+  background-color: var(--shape-selected);
+}
+.is-disabled {
+  cursor: not-allowed;
+}
+.toolbar-item__divider {
+  position: relative;
+  display: inline-block;
+  width: 1px;
+  height: 0.9em;
+  margin: 0 8px;
+  background-color: #e6e6e6;
+}
+input[type="color"] {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 2px;
+  border: none;
+  background: transparent;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}

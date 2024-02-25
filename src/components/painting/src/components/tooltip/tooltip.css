@@ -1,0 +1,59 @@
+.tooltip {
+  position: relative;
+}
+
+.tooltip-popper {
+  z-index: 2036;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 5px 8px;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  visibility: visible;
+  border-radius: 4px;
+  transition: transform 0.3s cubic-bezier(.23, 1, .32, 1);
+}
+
+.is-light {
+  background-color: var(--light);
+  border: 1px solid var(--light-border);
+}
+
+.is-dark {
+  background-color: var(--dark);
+  border: 1px solid var(--drak-border);
+}
+
+
+.popper-arrow {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+.popper-arrow:before {
+  content: '';
+  background-color: inherit;
+  border: 1px solid #e4e7ed;
+  border-right: none;
+  border-bottom: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.is-light .popper-arrow:before {
+  background-color: var(--light);
+}
+
+.is-dark .popper-arrow:before {
+  background-color: var(--dark);
+  border: none;
+}

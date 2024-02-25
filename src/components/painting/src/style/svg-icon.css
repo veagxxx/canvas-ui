@@ -1,0 +1,8 @@
+.svg-icon {
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+.is-disabled .svg-icon {
+  color: #cccccc;
+}
