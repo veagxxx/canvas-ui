@@ -13,7 +13,6 @@ import Toolbar from './components/toolbar';
 import { Painting } from './core/painting';
 import { DRAW_STATE } from './config/paint.config';
 import './style/index.css';
-import { setThemeColor } from './utils/func';
 
 const NAME = 'Painting';
 const defaultProps = {
